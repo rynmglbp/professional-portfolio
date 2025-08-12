@@ -107,6 +107,21 @@
       border-bottom: 2px solid #64ffda;
       padding-bottom: 2px;
     }
+        /* Styling the download button area */
+    .download-cv {
+      display: inline-flex;
+      align-items: center;
+      background-color: transparent;
+      color: #0a192f;
+      padding: 0;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .download-cv img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px; /* Space between icon and text */
+    }
     footer {
       text-align: center;
       padding: 1rem 0;
@@ -172,11 +187,12 @@
         <li>Communication</li>
       </ul>
     </section>
-
-      <h2>Download Curriculum Vitae</h2>
-      <a href="Paraon_CV-PT3_EFTP.pdf" download="Paraon_CV-PT3_EFTP.pdf" id="downloadCV" style="display: inline-flex; align-items: center; background-color: #64ffda; color: #0a192f; padding: 10px 15px; border-radius: 5px; text-decoration: none; font-size: 16px; transition: background-color 0.3s;">
-        <img src="dl-icon.jpg" style="width: 20px; height: 20px;" />
-      </a>
+    
+    <h2>Download Curriculum Vitae</h2>
+    <a href="Paraon_CV-PT3_EFTP.pdf" download="Paraon_CV-PT3_EFTP.pdf" class="download-cv">
+      <img src="dl-icon.jpg" alt="Download Icon" />
+      Download CV
+    </a>
 
   </main>
 
@@ -200,6 +216,7 @@
 </footer>
 </body>
 </html>
+
 
 
 
