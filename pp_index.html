@@ -31,6 +31,7 @@
     }
     nav ul li {
       margin: 0 1rem;
+      white-space: nowrap; /* prevents wrapping of 'About Me' and keeps all links in one line */
     }
     nav ul li a {
       color: #ffffff;
@@ -44,7 +45,7 @@
       border-bottom: 2px solid #64ffda;
     }
     nav ul li a.active {
-      color: #64ffda; /* Highlight color */
+      color: #64ffda;
       font-weight: 700;
       border-bottom: 2px solid #64ffda;
       padding-bottom: 2px;
@@ -112,7 +113,7 @@
         <li><a href="pp_index.html" class="active">Home</a></li>
         <li><a href="pp_about.html">About Me</a></li>
         <li><a href="pp_projects.html">Projects</a></li>
-        <li><a href="pp_contacts.html">Contact</a></li>
+        <li><a href="pp_contacts.html">Contacts</a></li>
       </ul>
     </nav>
   </header>
@@ -140,5 +141,4 @@
     };
   </script>
 </body>
-
 </html>
