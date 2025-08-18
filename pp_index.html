@@ -17,8 +17,10 @@
     nav {
       background: #0a192f;
       padding: 1rem;
-      position: sticky;
+      position: fixed; /* fixed navbar */
       top: 0;
+      left: 0;
+      width: 100%; /* full width */
       z-index: 1000;
     }
     nav ul {
@@ -31,7 +33,7 @@
     }
     nav ul li {
       margin: 0 1rem;
-      white-space: nowrap; /* prevents wrapping of 'About Me' and keeps all links in one line */
+      white-space: nowrap;
     }
     nav ul li a {
       color: #ffffff;
@@ -50,10 +52,9 @@
       border-bottom: 2px solid #64ffda;
       padding-bottom: 2px;
     }
-    .intro {
+    main {
+      padding: 6rem 1rem 2rem 1rem; /* top padding for fixed navbar */
       text-align: center;
-      margin-top: 10vh;
-      padding: 0 1rem;
     }
     .intro h1 {
       font-size: 3rem;
@@ -91,6 +92,7 @@
       cursor: pointer;
       font-size: 18px;
       transition: background 0.3s ease;
+      z-index: 1001;
     }
     #backToTop:hover {
       background: #64ffda;
@@ -103,6 +105,15 @@
       .intro p {
         font-size: 1rem;
       }
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: #0a192f;
+      color: #64ffda;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+      user-select: none;
     }
   </style>
 </head>
@@ -117,6 +128,7 @@
       </ul>
     </nav>
   </header>
+
   <main>
     <section class="intro">
       <img src="images/id.png" alt="Profile picture of Ryan Miguel Paraon" class="profile-pic">
@@ -124,6 +136,7 @@
       <p>Data Scientist | Web & Software Developer</p>
     </section>
   </main>
+
   <button id="backToTop" title="Go to top">↑</button>
 
   <script>
@@ -140,5 +153,9 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     };
   </script>
+
+  <footer>
+    &copy; 2025 Ryan Miguel Paraon. All rights reserved.
+  </footer>
 </body>
 </html>
