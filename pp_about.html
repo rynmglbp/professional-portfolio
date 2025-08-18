@@ -20,10 +20,10 @@
     nav {
       background: #0a192f;
       padding: 1rem;
-      position: fixed;
+      position: fixed; /* ✅ fixed navbar */
       top: 0;
       left: 0;
-      width: 100%;
+      width: 100%; /* ✅ full width */
       z-index: 1000;
     }
 
@@ -33,7 +33,7 @@
       margin: 0;
       padding: 0;
       justify-content: center;
-      flex-wrap: wrap; /* allow wrapping if space runs out */
+      flex-wrap: wrap;
     }
 
     nav ul li {
@@ -64,8 +64,8 @@
     main {
       max-width: 800px;
       width: 100%;
-      margin: 2rem auto;
-      padding: 5rem 1rem 0 1rem; /* space for fixed navbar */
+      margin: 0 auto;
+      padding: 6rem 1rem 2rem 1rem; /* ✅ enough space for fixed navbar */
       box-sizing: border-box;
     }
 
@@ -129,6 +129,7 @@
       cursor: pointer;
       font-size: 18px;
       transition: background 0.3s ease;
+      z-index: 1001;
     }
 
     #backToTop:hover {
@@ -149,7 +150,7 @@
     /* ✅ Responsive adjustments */
     @media (max-width: 768px) {
       nav ul {
-        flex-wrap: wrap; /* keep inline but wrap if needed */
+        flex-wrap: wrap;
       }
 
       nav ul li {
@@ -157,8 +158,7 @@
       }
 
       main {
-        margin: 1rem;
-        padding: 5rem 0.5rem 0 0.5rem; /* ensures "About Me" never gets covered */
+        padding: 6rem 0.8rem 2rem 0.8rem; /* ✅ prevents overlap on small screens */
       }
 
       h2 {
@@ -269,4 +269,3 @@
   </footer>
 </body>
 </html>
-
